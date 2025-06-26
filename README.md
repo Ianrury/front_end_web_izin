@@ -1,12 +1,58 @@
-# React + Vite
+# Documentasi Instalasi FRONEND
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+📘 Frontend Aplikasi Pengajuan Izin
+Ini adalah repository frontend untuk Aplikasi Pengajuan Izin. Project ini dibangun menggunakan Vite + React, dan terhubung dengan backend yang tersedia pada repository berikut:
+🔗 Repo Backend Aplikasi Izin
 
-Currently, two official plugins are available:
+⚙️ Persiapan Awal
+Clone repository frontend ini ke lokal:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+bash
+Salin
+Edit
+git clone <URL_REPOSITORY_FRONTEND>
+cd <nama-folder>
+Install semua dependencies menggunakan npm:
 
-## Expanding the ESLint configuration
+bash
+Salin
+Edit
+npm install
+Buat file environment .env di root project (atau copy dari .env.example jika tersedia), lalu isi dengan konfigurasi berikut:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+env
+Salin
+Edit
+VITE_API_URL=http://localhost:4000/api
+Jalankan aplikasi frontend dengan perintah:
+
+bash
+Salin
+Edit
+npm run dev
+🌐 Akses Aplikasi
+Setelah menjalankan perintah npm run dev, aplikasi akan berjalan di:
+
+arduino
+Salin
+Edit
+http://localhost:5173/
+⚠️ Catatan Penting:
+Port 5173 digunakan karena sudah didaftarkan di backend sebagai origin yang diizinkan untuk menghindari masalah CORS.
+
+📦 Teknologi yang Digunakan
+Vite
+
+React
+
+Tailwind CSS
+
+Axios
+
+React Router DOM
+
+📑 Dokumentasi Backend
+Untuk petunjuk dan endpoint API yang digunakan oleh frontend ini, silakan lihat dokumentasi backend pada repo berikut:
+
+🔗 https://github.com/Ianrury/back_end_web_izin
+
