@@ -28,7 +28,7 @@ Buat file .env di root project (atau copy dari .env.example jika tersedia), lalu
 VITE_API_URL=http://localhost:4000/api
 ```
 
-### 3. Buat File Environment
+### 4. Buat File Environment
 Buat file .env di root project (atau copy dari .env.example jika tersedia), lalu isi dengan konfigurasi berikut:
 ```bash
 VITE_API_URL=http://localhost:4000/api
